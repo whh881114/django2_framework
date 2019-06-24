@@ -25,7 +25,7 @@ SECRET_KEY = 'hz%il9g1u^$@1$vr4%+y4lt85%$#w@b@x%#h1q$*puvpkwx*2b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # My own apps.
+    'app_demo1',
+    'app_demo2',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +79,12 @@ WSGI_APPLICATION = 'django2_framework.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'data/db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django2_framework',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'USER': 'devops',
+        'PASSWORD': 'MyPassword007.'
     }
 }
 
