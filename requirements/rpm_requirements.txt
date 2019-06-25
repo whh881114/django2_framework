@@ -1,1 +1,2 @@
 globus-gssapi-gsi-devel
+openldap-devel
