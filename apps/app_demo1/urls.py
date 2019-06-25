@@ -23,7 +23,7 @@ urlpatterns = []
 
 products = [
     path('products', ProductsList.as_view(), name='products-list'),
-    path(r'products/<int:pk>', ProductsDetail.as_view(), name='products-detail')
+    path('products/<int:pk>', ProductsDetail.as_view(), name='products-detail')
 ]
 
 hello = [
@@ -34,7 +34,7 @@ urlpatterns = products + hello
 
 
 hello_v2 = [
-    path('hello_v2', Hello_V2.as_view(), name='hello_v2'),
+    path('v2/hello', Hello_V2.as_view(), name='hello_v2'),
 ]
 
 urlpatterns += hello_v2
