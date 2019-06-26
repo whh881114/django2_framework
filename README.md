@@ -19,9 +19,8 @@
     * serializers.py文件操作和admin.py文件方式一样，文件名规范为s_xxx.py格式。
     
     * views.py文件操作和admin.py文件方式一样，文件名规范为v_xxx.py格式。
-    
-    * urls.py文件做成包后，里面文件名统一为api.py，api_v2.py, api_v3.py依次类推，这里是允许多版本的api共存的，涉及到的视图
-      函数要变更的，那么文件名就要改为v_xxx_v2.py格式，涉及到其他文件的也需要修改。
+      
+    * urls.py文件在这里面不做成包，调用api接口规范还是按rest风格，所以不参考jumpserver那样的风格，写一个api_urls.py和一个view_urls.py。  
       
 4. data目录说明：暂时没用上，先预留目录。
 
