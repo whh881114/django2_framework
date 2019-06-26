@@ -22,7 +22,7 @@
       
     * urls.py文件在这里面不做成包，调用api接口规范还是按rest风格，所以不参考jumpserver那样的风格，写一个api_urls.py和一个view_urls.py。  
       
-4. data目录说明：暂时没用上，先预留目录。
+4. data目录说明：存放django后台管理所需要的静态文件。
 
 5. logs目录说明：保存日志，只用于开发模式，因为在生产环境下会使用nginx+uwsig+supervisor来部署django应用。
 
