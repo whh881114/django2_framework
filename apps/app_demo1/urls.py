@@ -19,6 +19,13 @@ from .views.v_hello import Hello
 from .views.v_hello_v2 import Hello_V2
 
 
+"""
+from django.urls import path，这是用来指定路由的，非正则表示强匹配，还有一个是re_path则是正则模式。
+path('xxx', xxx.as_view(), name='xxx')是路由记录，都可以统一写到urlpatterns中，为了方便管理即逻辑清楚可以使用以下的分组方式
+然后添加到urlpatterns数组中。
+"""
+
+
 urlpatterns = []
 
 products = [
