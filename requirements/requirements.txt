@@ -62,7 +62,7 @@ ipip-ipdb==1.2.1
 itsdangerous==0.24
 itypes==1.1.0
 jdcal==1.4.1
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 jms-storage==0.0.22
 kombu==4.0.2
