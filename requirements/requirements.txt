@@ -1,7 +1,7 @@
 aliyun-python-sdk-core-v3==2.9.1
 aliyun-python-sdk-ecs==4.10.1
 amqp==2.1.4
-ansible==2.4.2.0
+ansible==2.10.0
 asn1crypto==0.24.0
 azure-common==1.1.21
 azure-nspkg==3.0.2
